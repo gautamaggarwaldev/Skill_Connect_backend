@@ -1,0 +1,19 @@
+{
+  "name": "skill-connect-backend",
+  "version": "1.0.0",
+  "description": "This is a backend part of Skill Connect website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gautamaggarwaldev/Skill_Connect_backend.git"
+  },
+  "author": "Gautam Aggarwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gautamaggarwaldev/Skill_Connect_backend/issues"
+  },
+  "homepage": "https://github.com/gautamaggarwaldev/Skill_Connect_backend#readme"
+}
