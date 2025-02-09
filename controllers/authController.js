@@ -33,6 +33,8 @@ const signIn = async(req, res) => {
     //remove password from user
     user.password = undefined;
 
+    console.log(token);
+
     res.status(StatusCodes.OK).json({
         message: "Logged in successfully",
         token,
