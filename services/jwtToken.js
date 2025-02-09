@@ -4,18 +4,20 @@ import moment from "moment";
 // moment is a JavaScript library that significantly simplifies date and time manipulation by providing
 //  an intuitive API for parsing, validating, formatting, and calculating time differences.
 
-const generateToken = (userId, expires, secret) => {
+const generateToken = (userId, username, email, expires, secret) => {
     const payload = {
         _id: userId,
         iat: moment().unix(), // iat -> issued at time
         exp: expires.unix(), // unix time is the number of seconds since January 1, 1970
+        username: username,
+        email: email,
     };
     return jwt.sign(payload, secret);
 };
 
 const generateAuthTokens = async(user) => {
     const accessTokenExpires = moment().add(config.jwt.ACCESS_EXPIRATION_MINUTES, "minutes");
-    const accessToken = generateToken(user._id, accessTokenExpires, config.jwt.ACCESS_SECRET);
+    const accessToken = generateToken(user._id, user.username, user.email, accessTokenExpires, config.jwt.ACCESS_SECRET);
 
     return accessToken;
 };
