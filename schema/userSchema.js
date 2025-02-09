@@ -13,7 +13,7 @@ const userSchema = new mongoose.Schema({
     },
     username: {
         type: String,
-        requireed: true,
+        required: true,
         trim: true,
         unique: true,
     },
@@ -43,7 +43,7 @@ const userSchema = new mongoose.Schema({
     profile: {
         tags: {
             type: String,
-            default: [],
+            default: "",
         },
         title: {
             type: String,
