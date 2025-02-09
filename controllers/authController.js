@@ -13,6 +13,7 @@ const signUp = async(req, res) => {
         profile,
     });
 
+    const token = await generateAuthTokens(user);
     user.password = undefined;
 
     console.log(user);
@@ -20,6 +21,7 @@ const signUp = async(req, res) => {
     return res.status(StatusCodes.CREATED).json({
         message:"Account created successfully",
         user,
+        token,
     });
 
 };
