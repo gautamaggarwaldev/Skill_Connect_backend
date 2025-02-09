@@ -1,5 +1,6 @@
 import { StatusCodes } from "http-status-codes";
 import User from "../schema/userSchema.js"
+import ApiError from "../utils/apiError.js";
 
 const createUser = async(data) => {
     const user = await User.create(data);
