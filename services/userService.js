@@ -12,8 +12,8 @@ const getUserById = async(id) => {
 
 const updateUser = async(id, data) => {
     try{
-        const user = await User.findByIdAndUpdate(id, data, {new: true}); 
         //{ new: true } ensures that the updated document is returned instead of the old one.
+        const user = await User.findByIdAndUpdate(id, data, {new: true}); 
         return user;
     }
     catch(error) {
