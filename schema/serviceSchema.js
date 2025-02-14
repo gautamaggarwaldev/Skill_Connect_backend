@@ -26,7 +26,8 @@ const serviceSchema = new mongoose.Schema({
     },
     active: {
         type: Boolean,
-        required: false,
+        default: true,
+        required: true,
     },
 }, {
     timestamps: true

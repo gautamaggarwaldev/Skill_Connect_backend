@@ -2,6 +2,7 @@ import express from "express";
 import authRoute from "./authRoute.js";
 import userRoute from "./userRoute.js";
 import serviceRoute from "./serviceRoute.js";
+import mentorRoute from "./mentorRoute.js";
 
 const router = express.Router();
 
@@ -17,6 +18,10 @@ const Routes = [
     {
         path: "/services",
         route: serviceRoute,
+    },
+    {
+        path: "/mentors",
+        route: mentorRoute,
     },
 ]
 
