@@ -12,9 +12,9 @@ const config = {
         VERIFICATION_EXPIRATION_MINUTES: process.env.JWT_VERIFICATION_EXPIRATION_MINUTES || 5,
     },
     cloudinary: {
-        CLOUD_NAME: process.env.CLOUD_NAME,
-        CLOUDINARY_API_KEY: process.env.CLOUDINARY_API_KEY,
-        CLOUDINARY_API_SECRET: process.env.CLOUDINARY_API_SECRET,
+        CLOUD_NAME: process.env.CLOUDINARY_CLOUD_NAME,
+        API_KEY: process.env.CLOUDINARY_API_KEY,
+        API_SECRET: process.env.CLOUDINARY_API_SECRET,
     },
 }
 
