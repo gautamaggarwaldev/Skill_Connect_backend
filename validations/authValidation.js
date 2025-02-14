@@ -7,8 +7,10 @@ const signUpValidation = Joi.object().keys({
     username: Joi.string().required().trim(),
     email: Joi.string().required().trim().email(), 
     password: Joi.string().required().trim().min(8),
+    verified: Joi.boolean().optional(),
     role: Joi.string().valid("mentor", "student").required(),
     profile: Joi.object({
+        tags: Joi.string().optional(),
         title: Joi.string().optional(),
         college: Joi.string().optional(),
         bio: Joi.string().optional(),
@@ -17,6 +19,7 @@ const signUpValidation = Joi.object().keys({
             github: Joi.string().optional(),
             twitter: Joi.string().optional(),
             facebook: Joi.string().optional(),
+            instagram: Joi.string().optional(),
         }).optional(),
     }).optional(),
 });
