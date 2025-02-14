@@ -5,7 +5,7 @@ const createServiceValidation = Joi.object({
     description: Joi.string().required().trim(),
     duration: Joi.number().integer().min(1).required(),
     price: Joi.number().min(0).required(),
-    active: Joi.boolean().optional(),
+    active: Joi.boolean().required(),
 });
 
 const updateServiceValidation = Joi.object({
