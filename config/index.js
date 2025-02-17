@@ -12,9 +12,13 @@ const config = {
         VERIFICATION_EXPIRATION_MINUTES: process.env.JWT_VERIFICATION_EXPIRATION_MINUTES || 5,
     },
     cloudinary: {
-        CLOUD_NAME: process.env.CLOUDINARY_CLOUD_NAME,
-        API_KEY: process.env.CLOUDINARY_API_KEY,
-        API_SECRET: process.env.CLOUDINARY_API_SECRET,
+        cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+        api_key: process.env.CLOUDINARY_API_KEY,
+        api_secret: process.env.CLOUDINARY_API_SECRET,
+    },
+    razorpay: {
+        key_id: process.env.RAZORPAY_KEY_ID,
+        key_secret: process.env.RAZORPAY_KEY_SECRET,
     },
 }
 
