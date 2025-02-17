@@ -3,6 +3,7 @@ import authRoute from "./authRoute.js";
 import userRoute from "./userRoute.js";
 import serviceRoute from "./serviceRoute.js";
 import mentorRoute from "./mentorRoute.js";
+import bookingRoute from "./bookingRoute.js";
 
 const router = express.Router();
 
@@ -22,6 +23,10 @@ const Routes = [
     {
         path: "/mentors",
         route: mentorRoute,
+    },
+    {
+        path: "/bookings",
+        route: bookingRoute,
     },
 ]
 
