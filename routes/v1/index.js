@@ -4,7 +4,8 @@ import userRoute from "./userRoute.js";
 import serviceRoute from "./serviceRoute.js";
 import mentorRoute from "./mentorRoute.js";
 import bookingRoute from "./bookingRoute.js";
-import availabilityRoute from "./availabilityRoute.js"
+import availabilityRoute from "./availabilityRoute.js";
+import webhookRoute from "./webhookRoute.js";
 
 const router = express.Router();
 
@@ -33,6 +34,10 @@ const Routes = [
         path: "/availability",
         route: availabilityRoute,
     },
+    {
+        path: "/webhook",
+        route: webhookRoute,
+    }
 ]
 
 Routes.forEach((route) => {
