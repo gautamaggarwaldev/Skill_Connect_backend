@@ -1,4 +1,4 @@
-# Web App Backend Documentation
+# Skill Connect Backend Documentation
 
 This repository contains the backend code for a web application designed to manage user authentication, mentor availability, bookings, and various services. The backend is built using Node.js, Express, and MongoDB, with additional integrations for third-party services like Razorpay, Zoom, and Cloudinary.
 
