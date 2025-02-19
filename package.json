@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/gautamaggarwaldev/Skill_Connect_backend#readme",
   "dependencies": {
+    "axios": "^1.7.9",
     "bcrypt": "^5.1.1",
     "cloudinary": "^2.5.1",
     "cookie-parser": "^1.4.7",
