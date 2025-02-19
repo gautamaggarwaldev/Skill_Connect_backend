@@ -38,6 +38,19 @@ const getAvailability = async(userId) => {
 };
 
 const getMentorAvailabilityForNext14Days = async(userId, durationInMinutes) => {
+    
+    //1. Fetch Mentor Availability
+    //2. Handle Error If No Availability Is Found
+    //3. Extract Mentor’s Weekly Availability & Unavailable Dates
+    //4. Function to Generate Time Slots
+    //5. Fetch Booked Appointments
+    //6. Generate Availability for the Next 14 Days
+    //7. Skip Unavailable Dates
+    //8. Retrieve Availability for Each Day
+    //9. Generate Time Slots & Remove Booked Ones
+    //10. Add the Available Slots to the Final Response
+    //11. Return the Final Availability or Handle Errors
+
     try {
         //Fetch mentor availabilty by userId
         const mentorAvailability = await Availability.findOne({
