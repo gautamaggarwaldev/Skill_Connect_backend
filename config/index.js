@@ -25,6 +25,15 @@ const config = {
         clientId: process.env.ZOOM_CLIENT_ID,
         clientSecret: process.env.ZOOM_CLIENT_SECRET,
     },
+    email: {
+        host: process.env.SMTP_HOST,
+        port: process.env.SMTP_PORT,
+        auth: {
+            user: process.env.SMTP_USERNAME,
+            pass: process.env.SMTP_PASSWORD,
+        },
+        from: process.env.EMAIL_FROM,
+    }
 }
 
 export default config;
