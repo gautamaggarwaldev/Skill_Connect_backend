@@ -4,6 +4,7 @@ import userRoute from "./userRoute.js";
 import serviceRoute from "./serviceRoute.js";
 import mentorRoute from "./mentorRoute.js";
 import bookingRoute from "./bookingRoute.js";
+import availabilityRoute from "./availabilityRoute.js"
 
 const router = express.Router();
 
@@ -27,6 +28,10 @@ const Routes = [
     {
         path: "/bookings",
         route: bookingRoute,
+    },
+    {
+        path: "/availability",
+        route: availabilityRoute,
     },
 ]
 
