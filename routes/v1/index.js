@@ -6,6 +6,7 @@ import mentorRoute from "./mentorRoute.js";
 import bookingRoute from "./bookingRoute.js";
 import availabilityRoute from "./availabilityRoute.js";
 import webhookRoute from "./webhookRoute.js";
+import homeRoute from "./homeRoute.js";
 
 const router = express.Router();
 
@@ -37,6 +38,10 @@ const Routes = [
     {
         path: "/webhook",
         route: webhookRoute,
+    },
+    {
+        path: "/home",
+        route: homeRoute,
     }
 ]
 
