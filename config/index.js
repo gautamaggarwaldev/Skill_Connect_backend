@@ -20,6 +20,11 @@ const config = {
         key_id: process.env.RAZORPAY_KEY_ID,
         key_secret: process.env.RAZORPAY_KEY_SECRET,
     },
+    zoom: {
+        accountId: process.env.ZOOM_ACCOUNT_ID,
+        clientId: process.env.ZOOM_CLIENT_ID,
+        clientSecret: process.env.ZOOM_CLIENT_SECRET,
+    },
 }
 
 export default config;
